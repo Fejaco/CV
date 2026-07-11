@@ -279,13 +279,14 @@ const T={
   hero:{role:'Responsável de Planeamento e Controlo de Gestão',sub:'Controlo de Gestão · FP&A · Business Intelligence · Data Analytics',lead:'Controller e Contabilista Certificado, com mais de 20 anos de experiência na análise financeira e no apoio à decisão estratégica.',dlcv:'Descarregar CV',contact:'Contactar',loc:'Lisboa, Portugal',occ:'OCC n.º 81163'},
   sec:{ind:['Indicadores de carreira','Em síntese'],exp:['Percurso profissional','Experiência'],acad:['Formação académica','Percurso académico'],comp:['Domínio técnico','Competências e ferramentas'],cert:['Desenvolvimento contínuo','Certificações & formação'],proj:['Iniciativas de impacto','Projetos de destaque'],dl:['Documentos','Downloads'],contacto:['Vamos falar','Contacto']},
   radarTitle:'Radar de competências',toolsTitle:'Matriz de ferramentas',langTitle:'Idiomas',vizRadar:'Radar',vizBars:'Barras',
-  radarNote:'Passe o cursor sobre os pontos para ver os valores. Níveis indicativos, editáveis no ficheiro.',
+  radarNote:'Passe o cursor sobre os pontos para ver as áreas. Níveis indicativos.',
   all:'Todas',
-  kpis:[{n:'20',suf:'+',anim:true,l:'Anos de experiência'},{n:'4',anim:true,l:'Setores de atividade'},{n:'4',anim:true,l:'Organizações de referência'},{n:'4',anim:true,l:'Graus e pós-graduações'},{n:'87',anim:true,l:'Ações de formação (OCC)'},{n:'1.º',anim:false,l:'Prémio Nacional (IPAI)'}],
+  levels:['Avançado','Proficiente','Intermédio'],
+  kpis:[{n:'20',suf:'+',anim:true,l:'Anos de experiência'},{n:'4',anim:true,l:'Setores de atividade'},{n:'4',anim:true,l:'Organizações de referência'},{n:'4',anim:true,l:'Graus e pós-graduações'},{n:'320',suf:' M€',anim:true,l:'Orçamento anual gerido'},{n:'1.º',anim:false,l:'Prémio Nacional (IPAI)'}],
   exp:[
-   {cur:true,date:'DEZ 2025 – PRESENTE',role:'Responsável de Área — Planeamento e Controlo de Gestão',org:RTP+'  ·  Lisboa',desc:'Lidera a transformação do processo de reporte de gestão: migração de relatórios assentes em SAP BI e Excel para dashboards em Power BI, com ligações diretas a bases de dados e SharePoint; automação com Power Automate; reformulação do plano de centros de custo; colaboração no Relatório e Contas, no PAO e em relatórios de serviço público; integração na equipa de transição para o SNC-AP. Coordena uma equipa de 2 pessoas.'},
-   {date:'ABR 2022 – NOV 2025',role:'Management Controller — Controlo de Gestão',org:TMLx+'  ·  Lisboa',desc:'Ciclo orçamental completo e fecho mensal; implementação de contabilidade analítica em ERP; análises e dashboards em Power BI; reporte regulatório, contratação pública e articulação com auditoria externa.'},
-   {date:'SET 2012 – ABR 2022',role:'Management Controller — Controlo de Gestão',org:H3+'  ·  Lisboa',desc:'Processo orçamental de um grupo diversificado de restauração; sistema integrado de reporting de gestão e dashboards em Power BI; otimização da gestão de inventários, aumentando a eficiência e reduzindo o risco de erro.'},
+   {cur:true,date:'DEZ 2025 – PRESENTE',role:'Responsável de Planeamento e Controlo de Gestão',org:RTP+'  ·  Lisboa',desc:'Lidera a transformação do processo de reporte de gestão: migração de relatórios assentes em SAP BI e Excel para dashboards em Power BI, com ligações diretas a bases de dados e SharePoint, reduzindo o tempo de produção do reporte mensal em 50%; integração de IA generativa (Claude) no trabalho da equipa; reformulação do plano de centros de custo (cerca de 2.700 centros de custo); colaboração no Relatório e Contas, no PAO e em relatórios de serviço público; integração na equipa de transição para o SNC-AP. Coordena uma equipa de 2 controllers.'},
+   {date:'ABR 2022 – NOV 2025',role:'Management Controller — Controlo de Gestão',org:TMLx+'  ·  Lisboa',desc:'Ciclo orçamental anual de cerca de 320 M€ da entidade gestora do sistema de transportes públicos da Área Metropolitana de Lisboa (Carris Metropolitana e sistema navegante); contabilidade analítica em ERP (cerca de 40 centros de custo); dashboards em Power BI utilizados pela administração; reporte regulatório, contratação pública e articulação com auditoria externa.'},
+   {date:'SET 2012 – ABR 2022',role:'Management Controller — Controlo de Gestão',org:H3+'  ·  Lisboa',desc:'Processo orçamental de um grupo de restauração com 3 marcas e 80 unidades (volume de negócios de cerca de 50 M€); sistema integrado de reporting de gestão para as 5 empresas do grupo e dashboards em Power BI; otimização da gestão de inventários, reduzindo os desvios de inventário em 4%.'},
    {date:'JUN 2010 – AGO 2012',role:'Controller',org:ECI+'  ·  Lisboa',desc:'Orçamentos, relatórios de gestão e dashboards de KPI; desenvolvimento e análise de planos de negócio de apoio ao crescimento e à diversificação no retalho.'},
    {date:'JUL 2004 – JUN 2010',role:'Auditor Interno',org:ECI+'  ·  Lisboa',desc:'Avaliação do governo societário e do controlo interno; auditorias transversais; implementação de estratégias de gestão de risco. Trabalho distinguido com o 1.º Prémio Nacional do '+IPAI+' 2010.'}
   ],
@@ -297,9 +298,9 @@ const T={
   ],
   compLabels:[['Controlo de Gestão','& FP&A'],['Business Intelligence','& Data Analytics'],['Contabilidade,','Fiscalidade & Relato'],['Auditoria, Controlo','Interno & Risco'],['Liderança','& Apoio à Decisão']],
   compFlat:['Controlo de Gestão & FP&A','Business Intelligence & Data Analytics','Contabilidade, Fiscalidade & Relato','Auditoria, Controlo Interno & Risco','Liderança & Apoio à Decisão'],
-  toolCats:['Business Intelligence','Softwares de Contabilidade','Gestão Documental','Ferramentas de Produtividade','Linguagens de Programação'],
-  tools:[['Power BI',90,0],['MicroStrategy',75,0],['SAP BusinessObjects',75,0],['SAP',85,1],['Primavera',85,1],['ContaPlus',85,1],['SAP FI/CO',80,1],['SharePoint',80,2],['FileDoc',80,2],['Excel Avançado (Power Query / Pivot)',90,3],['Power Automate',75,3],['SQL',75,4],['Python',65,4]],
-  langs:[['Português','Nativo',5],['Inglês','Fluente',4],['Espanhol','Fluente',4]],
+  toolCats:['Business Intelligence','Softwares de Contabilidade','Gestão Documental','Ferramentas de Produtividade','Programação e IA'],
+  tools:[['Power BI',90,0],['MicroStrategy',75,0],['SAP BusinessObjects',75,0],['SAP',85,1],['Primavera',85,1],['ContaPlus',85,1],['SAP FI/CO',80,1],['SharePoint',80,2],['FileDoc',80,2],['Excel Avançado (Power Query / Pivot)',90,3],['SQL',75,4],['Python',65,4],['Claude (IA generativa)',80,4]],
+  langs:[['Português','Nativo',5],['Inglês','B2',3],['Espanhol','B2',3]],
   certIntro:'87 ações de formação certificadas pela '+OCC('Ordem dos Contabilistas Certificados (OCC)')+', de 4 a 8 horas cada, frequentadas em múltiplas edições. Filtre por área para ver os temas representativos.',
   certAreas:[
    ['Fiscalidade',48,['Atualização fiscal em IVA — aspetos práticos','Atualização fiscal em IRC — aspetos práticos','Atualização fiscal em IRS — aspetos práticos','IRC — tributações autónomas e dedutibilidade dos gastos','Mais e menos-valias em IRS e IRC','Benefícios e incentivos fiscais','Preços de transferência','Tributação de empresas do grupo','RITI — vendas à distância','Regularização do IVA de créditos incobráveis','Casos práticos de IVA e regras de faturação','Dossier fiscal — notas anexas','Orçamento do Estado']],
@@ -310,42 +311,43 @@ const T={
   ],
   projLabels:['Contexto','Desafio','Solução','Impacto'],
   projects:[
-   ['Transformação do reporting de gestão (RTP)','Reporte assente em extrações do SAP BI e em ficheiros Excel manuais.','Tornar a informação de gestão fiável, automática e acessível.','Migração para dashboards em Power BI com ligações a bases de dados e SharePoint, e automação com Power Automate.','Reporting mais rápido, fiável e escalável.'],
-   ['Contabilidade analítica em ERP (TML)','Empresa pública de transportes a necessitar de informação de gestão estruturada.','Estruturar a contabilidade analítica no ERP e integrá-la no controlo orçamental.','Implementação dos processos e incorporação no fecho mensal.','Maior rigor e fiabilidade da informação financeira.'],
+   ['Transformação do reporting de gestão (RTP)','Reporte assente em extrações do SAP BI e em ficheiros Excel manuais.','Tornar a informação de gestão fiável, automática e acessível.','Migração para dashboards em Power BI com ligações a bases de dados e SharePoint, com integração de IA generativa (Claude).','Redução de 50% do tempo de produção do reporte mensal.'],
+   ['Contabilidade analítica em ERP (TML)','Entidade gestora do sistema de transportes públicos da AML, a necessitar de informação de gestão estruturada.','Estruturar a contabilidade analítica no ERP e integrá-la no controlo orçamental.','Implementação dos processos (cerca de 40 centros de custo) e incorporação no fecho mensal.','Maior rigor e fiabilidade da informação financeira.'],
    ['Sistema integrado de reporting + Power BI (h3 / TML)','Múltiplas áreas e dados dispersos.','Consolidar dados em indicadores acionáveis.','Reporting integrado e dashboards dinâmicos em Power BI, com modelos em Excel.','Melhor acesso à informação e suporte à decisão.'],
    ['Estudo premiado em auditoria interna','Investigação em auditoria interna e responsabilidade social.','Demonstrar o papel do auditor interno na responsabilidade social.','Trabalho de investigação com estudo de caso em Portugal.','1.º Prémio Nacional IPAI 2010 e três comunicações públicas.']
   ],
   dlCards:[{title:'Curriculum Vitae',sub:'Versão executiva · PDF',href:'CV_Fernando_Correia_PT.pdf'},{title:'Executive Career Report',sub:'Relatório de carreira · PDF',href:'Executive_Career_Report_Fernando_Correia.pdf'}],
-  dlBtn:'Descarregar',dlNote:'Os PDF estão na mesma pasta deste ficheiro.',
+  dlBtn:'Descarregar',dlNote:'',
   contactText:'Para qualquer contacto profissional, envie-me um email diretamente — terei todo o gosto em responder.',contactBtn:'Enviar email',
   footer:'© 2026 Fernando Correia · Planeamento e Controlo de Gestão'
  },
  en:{
   nav:['Profile','Experience','Skills','Certifications','Projects','Downloads','Contact'],
   hero:{role:'Head of Planning & Management Control',sub:'Management Control · FP&A · Business Intelligence · Data Analytics',lead:'Controller and Certified Accountant, with over 20 years of experience in financial analysis and strategic decision support.',dlcv:'Download CV',contact:'Contact',loc:'Lisbon, Portugal',occ:'OCC no. 81163'},
-  sec:{ind:['Career indicators','At a glance'],exp:['Career path','Experience'],acad:['Education','Academic background'],comp:['Technical expertise','Skills & tools'],cert:['Continuous development','Certifications & training'],proj:['High-impact initiatives','Highlighted projects'],dl:['Documents','Downloads'],contacto:['Let\u2019s talk','Contact']},
+  sec:{ind:['Career indicators','At a glance'],exp:['Career path','Experience'],acad:['Education','Academic background'],comp:['Technical expertise','Skills & tools'],cert:['Continuous development','Certifications & training'],proj:['High-impact initiatives','Highlighted projects'],dl:['Documents','Downloads'],contacto:['Let’s talk','Contact']},
   radarTitle:'Skills radar',toolsTitle:'Tools matrix',langTitle:'Languages',vizRadar:'Radar',vizBars:'Bars',
-  radarNote:'Hover over the points to see the values. Indicative levels.',
+  radarNote:'Hover over the points to see the areas. Indicative levels.',
   all:'All',
-  kpis:[{n:'20',suf:'+',anim:true,l:'Years of experience'},{n:'4',anim:true,l:'Sectors of activity'},{n:'4',anim:true,l:'Reference organisations'},{n:'4',anim:true,l:'Degrees & postgraduate qualifications'},{n:'87',anim:true,l:'Training courses (OCC)'},{n:'1st',anim:false,l:'National Award (IPAI)'}],
+  levels:['Advanced','Proficient','Intermediate'],
+  kpis:[{n:'20',suf:'+',anim:true,l:'Years of experience'},{n:'4',anim:true,l:'Sectors of activity'},{n:'4',anim:true,l:'Reference organisations'},{n:'4',anim:true,l:'Degrees & postgraduate qualifications'},{n:'320',suf:' M€',anim:true,l:'Annual budget managed'},{n:'1st',anim:false,l:'National Award (IPAI)'}],
   exp:[
-   {cur:true,date:'DEC 2025 – PRESENT',role:'Head of Planning & Management Control',org:RTP+'  ·  Lisbon',desc:'Leads the transformation of the management-reporting process: migrating reports based on SAP BI and Excel to Power BI dashboards, with direct connections to databases and SharePoint; automation with Power Automate; redesign of the cost-centre plan; collaboration on the Annual Report and Accounts, the PAO and public-service reports; member of the SNC-AP transition team. Coordinates a 2-person team.'},
-   {date:'APR 2022 – NOV 2025',role:'Management Controller — Management Control',org:TMLx+'  ·  Lisbon',desc:'Full budget cycle and monthly closing; implementation of cost accounting in the ERP; analyses and Power BI dashboards; regulatory reporting, public procurement and liaison with external auditing.'},
-   {date:'SEP 2012 – APR 2022',role:'Management Controller — Management Control',org:H3+'  ·  Lisbon',desc:'Budgeting process for a diversified food-service group; integrated management-reporting system and Power BI dashboards; optimisation of inventory management, increasing efficiency and reducing the risk of error.'},
+   {cur:true,date:'DEC 2025 – PRESENT',role:'Head of Planning & Management Control',org:RTP+'  ·  Lisbon',desc:'Leads the transformation of the management-reporting process: migrating reports based on SAP BI and Excel to Power BI dashboards, with direct connections to databases and SharePoint, reducing monthly report production time by 50%; integration of generative AI (Claude) into the team’s work; redesign of the cost-centre plan (around 2,700 cost centres); collaboration on the Annual Report and Accounts, the PAO and public-service reports; member of the SNC-AP transition team. Coordinates a team of 2 controllers.'},
+   {date:'APR 2022 – NOV 2025',role:'Management Controller — Management Control',org:TMLx+'  ·  Lisbon',desc:'Annual budget cycle of around €320 M of the entity managing the Lisbon Metropolitan Area public transport system (Carris Metropolitana and the navegante ticketing system); cost accounting in the ERP (around 40 cost centres); Power BI dashboards used by the Board; regulatory reporting, public procurement and liaison with external auditing.'},
+   {date:'SEP 2012 – APR 2022',role:'Management Controller — Management Control',org:H3+'  ·  Lisbon',desc:'Budgeting process for a food-service group with 3 brands and 80 outlets (turnover of around €50 M); integrated reporting system for the group’s 5 companies and Power BI dashboards; optimisation of inventory management, reducing inventory variances by 4%.'},
    {date:'JUN 2010 – AUG 2012',role:'Controller',org:ECI+'  ·  Lisbon',desc:'Budgets, management reports and KPI dashboards; development and analysis of business plans supporting growth and diversification in retail.'},
    {date:'JUL 2004 – JUN 2010',role:'Internal Auditor',org:ECI+'  ·  Lisbon',desc:'Assessment of corporate governance and internal control; cross-functional audits; implementation of risk-management strategies. Work distinguished with the 1st National '+IPAI+' Award 2010.'}
   ],
   acad:[
    {y:'2005',t:'Bachelor in Accounting & Administration — Auditing',e:ISCAL,badge:'12/20'},
    {y:'2006',t:'Postgraduate Diploma in Taxation',e:'IERU · '+UCen,badge:'16/20'},
-   {y:'2010',t:'Master\u2019s in Auditing',e:ISCAL+' · 15/20',badge:'Best Student Award'},
+   {y:'2010',t:'Master’s in Auditing',e:ISCAL+' · 15/20',badge:'Best Student Award'},
    {y:'2024',t:'Postgraduate Diploma in Data Science & Business Analytics',e:ISEG,badge:'16/20'}
   ],
   compLabels:[['Management Control','& FP&A'],['Business Intelligence','& Data Analytics'],['Accounting, Taxation','& Financial Reporting'],['Auditing, Internal','Control & Risk'],['Leadership','& Decision Support']],
   compFlat:['Management Control & FP&A','Business Intelligence & Data Analytics','Accounting, Taxation & Financial Reporting','Auditing, Internal Control & Risk','Leadership & Decision Support'],
-  toolCats:['Business Intelligence','Accounting Software','Document Management','Productivity Tools','Programming Languages'],
-  tools:[['Power BI',90,0],['MicroStrategy',75,0],['SAP BusinessObjects',75,0],['SAP',85,1],['Primavera',85,1],['ContaPlus',85,1],['SAP FI/CO',80,1],['SharePoint',80,2],['FileDoc',80,2],['Advanced Excel (Power Query / Pivot)',90,3],['Power Automate',75,3],['SQL',75,4],['Python',65,4]],
-  langs:[['Portuguese','Native',5],['English','Fluent',4],['Spanish','Fluent',4]],
+  toolCats:['Business Intelligence','Accounting Software','Document Management','Productivity Tools','Programming & AI'],
+  tools:[['Power BI',90,0],['MicroStrategy',75,0],['SAP BusinessObjects',75,0],['SAP',85,1],['Primavera',85,1],['ContaPlus',85,1],['SAP FI/CO',80,1],['SharePoint',80,2],['FileDoc',80,2],['Advanced Excel (Power Query / Pivot)',90,3],['SQL',75,4],['Python',65,4],['Claude (generative AI)',80,4]],
+  langs:[['Portuguese','Native',5],['English','B2',3],['Spanish','B2',3]],
   certIntro:'87 training courses certified by the '+OCC('Order of Certified Accountants (OCC)')+', 4 to 8 hours each, attended across multiple editions. Filter by area to see representative topics.',
   certAreas:[
    ['Taxation',48,['VAT tax update — practical aspects','Corporate income tax (IRC) update — practical aspects','Personal income tax (IRS) update — practical aspects','IRC — autonomous taxation and deductibility of expenses','Capital gains and losses in IRS and IRC','Tax benefits and incentives','Transfer pricing','Taxation of group companies','RITI — distance sales','VAT adjustment of bad debts','Practical VAT cases and invoicing rules','Tax file — notes to the accounts','State Budget']],
@@ -356,20 +358,21 @@ const T={
   ],
   projLabels:['Context','Challenge','Solution','Impact'],
   projects:[
-   ['Management reporting transformation (RTP)','Reporting based on SAP BI extractions and manual Excel files.','Make management information reliable, automatic and accessible.','Migration to Power BI dashboards with connections to databases and SharePoint, and automation with Power Automate.','Faster, more reliable and scalable reporting.'],
-   ['Cost accounting in ERP (TML)','A public transport company needing structured management information.','Structure cost accounting in the ERP and integrate it into budget control.','Implementation of the processes and incorporation into the monthly closing.','Greater rigour and reliability of financial information.'],
+   ['Management reporting transformation (RTP)','Reporting based on SAP BI extractions and manual Excel files.','Make management information reliable, automatic and accessible.','Migration to Power BI dashboards with connections to databases and SharePoint, with integration of generative AI (Claude).','50% reduction in monthly report production time.'],
+   ['Cost accounting in ERP (TML)','The entity managing the Lisbon Metropolitan Area public transport system, needing structured management information.','Structure cost accounting in the ERP and integrate it into budget control.','Implementation of the processes (around 40 cost centres) and incorporation into the monthly closing.','Greater rigour and reliability of financial information.'],
    ['Integrated reporting + Power BI (h3 / TML)','Multiple areas and scattered data.','Consolidate data into actionable indicators.','Integrated reporting and dynamic Power BI dashboards, with Excel models.','Better access to information and decision support.'],
-   ['Award-winning study in internal auditing','Research in internal auditing and social responsibility.','Demonstrate the internal auditor\u2019s role in social responsibility.','Research work with a case study in Portugal.','1st National IPAI Award 2010 and three public talks.']
+   ['Award-winning study in internal auditing','Research in internal auditing and social responsibility.','Demonstrate the internal auditor’s role in social responsibility.','Research work with a case study in Portugal.','1st National IPAI Award 2010 and three public talks.']
   ],
   dlCards:[{title:'Curriculum Vitae',sub:'Executive version · PDF',href:'CV_Fernando_Correia_EN.pdf'},{title:'Executive Career Report',sub:'Career report · PDF',href:'Executive_Career_Report_Fernando_Correia_EN.pdf'}],
-  dlBtn:'Download',dlNote:'The PDFs are in the same folder as this file.',
-  contactText:'For any professional enquiry, email me directly — I\u2019ll be glad to reply.',contactBtn:'Send email',
+  dlBtn:'Download',dlNote:'',
+  contactText:'For any professional enquiry, email me directly — I’ll be glad to reply.',contactBtn:'Send email',
   footer:'© 2026 Fernando Correia · Planning & Management Control'
  }
 };
 
 let lang='pt', vizMode='radar', toolFilter='all', certFilter='all';
 const E=id=>document.getElementById(id);
+const LVL=v=>{const L=T[lang].levels;return v>=90?L[0]:v>=75?L[1]:L[2];};
 
 function render(){
   const d=T[lang];
@@ -402,7 +405,7 @@ function renderAcad(d){
 function renderTools(d){
   E('toolfilters').innerHTML=`<button class="chip${toolFilter==='all'?' active':''}" data-c="all">${d.all}</button>`+d.toolCats.map((c,i)=>`<button class="chip${toolFilter==String(i)?' active':''}" data-c="${i}">${c}</button>`).join('');
   const list=(toolFilter==='all')?d.tools:d.tools.filter(t=>t[2]==+toolFilter);
-  E('tools').innerHTML=list.map(([n,v])=>`<div class="bar"><div class="bl"><span>${n}</span><span>${v}%</span></div><div class="track"><div class="fill" style="width:0"></div></div></div>`).join('');
+  E('tools').innerHTML=list.map(([n,v])=>`<div class="bar"><div class="bl"><span>${n}</span><span>${LVL(v)}</span></div><div class="track"><div class="fill" style="width:0"></div></div></div>`).join('');
   requestAnimationFrame(()=>document.querySelectorAll('#tools .fill').forEach((f,i)=>f.style.width=list[i][1]+'%'));
 }
 function renderCerts(d){
@@ -436,13 +439,13 @@ function drawRadar(){
   [0.25,0.5,0.75,1].forEach(f=>s+=`<polygon points="${poly(R*f)}" fill="none" stroke="#e3e9f0" stroke-width="1"/>`);
   for(let i=0;i<N;i++){const[x,y]=P(i,R);s+=`<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#e3e9f0" stroke-width="1"/>`;}
   s+=`<polygon points="${dp}" fill="rgba(46,117,182,.20)" stroke="#1f3d68" stroke-width="2"><animate attributeName="points" from="${poly(0)}" to="${dp}" dur="0.7s" fill="freeze"/></polygon>`;
-  for(let i=0;i<N;i++){const[x,y]=P(i,R*values[i]/100);s+=`<circle class="rp" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5" fill="#10294a"><title>${flat[i]}: ${values[i]}%</title></circle>`;}
+  for(let i=0;i<N;i++){const[x,y]=P(i,R*values[i]/100);s+=`<circle class="rp" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5" fill="#10294a"><title>${flat[i]}</title></circle>`;}
   for(let i=0;i<N;i++){const[x,y]=P(i,R+16);const c=Math.cos(ang(i));const anchor=c>0.25?'start':(c<-0.25?'end':'middle');const ln=labels[i];const y0=y-(ln.length-1)*7;let t=`<text x="${x.toFixed(1)}" y="${y0.toFixed(1)}" text-anchor="${anchor}" font-family="IBM Plex Sans,sans-serif" font-size="11.5" font-weight="500" fill="#1c2733">`;ln.forEach((l,k)=>t+=`<tspan x="${x.toFixed(1)}" dy="${k===0?0:14}">${l}</tspan>`);s+=t+`</text>`;}
   E('radar').innerHTML=s+`</svg>`;
 }
 function drawBars(){
   const d=T[lang];
-  E('radar').innerHTML=`<div class="bars" style="padding:14px 4px">`+d.compFlat.map((n,i)=>`<div class="bar"><div class="bl"><span>${n}</span><span>${compVals[i]}%</span></div><div class="track"><div class="fill" style="width:0"></div></div></div>`).join('')+`</div>`;
+  E('radar').innerHTML=`<div class="bars" style="padding:14px 4px">`+d.compFlat.map((n,i)=>`<div class="bar"><div class="bl"><span>${n}</span><span>${LVL(compVals[i])}</span></div><div class="track"><div class="fill" style="width:0"></div></div></div>`).join('')+`</div>`;
   requestAnimationFrame(()=>document.querySelectorAll('#radar .fill').forEach((f,i)=>f.style.width=compVals[i]+'%'));
 }
 E('langToggle').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return; if(b.dataset.l!==lang){lang=b.dataset.l; toolFilter='all'; certFilter='all'; render();}});
